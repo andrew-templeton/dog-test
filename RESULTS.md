@@ -30,8 +30,19 @@ the same scenario without any pocket changes.
 |---|---|---|
 | #1 | 🟡 NEEDS TRAINING | "Three conversations, then come back with a scoped proposal." Soft stop. |
 | #2 | 🔴 BAD DoG / 🟢 GOOD DoG | "Stop. I'm not going to march through Checks 2 and 3 on a pitch you've just withdrawn." Clean stop on the pitch as delivered; explicitly credits the operator's audit-side behavior. |
+| #3 | 🟡 Strength ✓ / Surprise ✓ / Utility ⚠ | Operator reframed the pitch toward a Sonnet-on-corpus pivot anchored in a 2026-Q1 Bekins/Saia artifact-specification change. Audit accepted the pivot, gated the utility leg on a named-signer collection step. |
 
-Both runs are committed (`transcripts/2026-05-25-manifest-qa-stop-*.md`).
+All three runs are committed (`transcripts/2026-05-25-manifest-qa-stop-*.md`).
+
+**The three-run pattern, plainly:** the audit rarely emits a clean
+unambiguous STOP. It prefers to engage the operator on what *would*
+be a usable project given the pocket data, even when that means
+pivoting away from the original pitch. That is consistent with the
+`chatbot-defer` and `llm-tags-reframe` deviations: the audit's tier
+vocabulary is engagement-flavored, not kill-flavored. For an
+operator wanting a kill switch in roadmap meetings, this is a real
+limitation worth naming; for an operator wanting a thinking
+partner, it's the feature.
 
 **What this shows.** The variance is path-dependent on the operator's
 trajectory through the dialogue, not on the pocket data. When the
