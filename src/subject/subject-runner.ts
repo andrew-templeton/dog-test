@@ -115,7 +115,8 @@ export const runSubject: SubjectProvider = async ({
   let iterations = 0;
   while (iterations < MAX_TOOL_ITERATIONS) {
     iterations += 1;
-    const response = await client.messages.create({
+    // Streaming required for max_tokens > ~8192 (SDK refuses non-stream).
+    const stream = client.messages.stream({
       model: model ?? DEFAULT_MODEL,
       max_tokens: MAX_TOKENS,
       system: [
@@ -128,6 +129,7 @@ export const runSubject: SubjectProvider = async ({
       messages: conversation,
       tools,
     });
+    const response = await stream.finalMessage();
 
     // If the model responded with text and no tool_use, we're done.
     if (response.stop_reason !== 'tool_use') {
