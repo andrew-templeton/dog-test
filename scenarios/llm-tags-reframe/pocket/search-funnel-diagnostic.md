@@ -1,6 +1,6 @@
 # Search Funnel Diagnostic - Trailing 90 Days
 
-**Pulled:** 2026-05-22 by J. Reyes (analytics)
+**Pulled:** 2026-05-22 by A. Iyer (analytics)
 **Window:** 2026-02-21 through 2026-05-21
 **Source:** site-search event stream + GA4 sessions
 

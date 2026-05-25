@@ -1,6 +1,6 @@
 # Merch Ops Tagging Throughput
 
-**Maintained by:** D. Park (merch ops lead)
+**Maintained by:** L. Voss (merch ops lead)
 **Last updated:** 2026-05-15
 
 ## Current state

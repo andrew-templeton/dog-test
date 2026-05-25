@@ -1,6 +1,6 @@
 # Search / Merch Ops Initiative Tracker
 
-**Maintained by:** D. Park (merch ops lead)
+**Maintained by:** L. Voss (merch ops lead)
 **Last updated:** 2026-05-19
 
 Initiatives the merch ops + search team has scoped or considered in the trailing 12 months. Numbers are best-available estimates from the spike docs; ranges reflect uncertainty in adoption and conversion lift.

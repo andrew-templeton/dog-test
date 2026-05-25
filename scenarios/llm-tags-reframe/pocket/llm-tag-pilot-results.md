@@ -1,7 +1,7 @@
 # LLM Tagging Pilot - Results Summary
 
 **Pilot run:** 2026-05-08 through 2026-05-12
-**Owner:** D. Park (merch ops)
+**Owner:** L. Voss (merch ops)
 **Scope:** 1,000-SKU sample stratified across 8 top-level categories
 
 ## Setup
