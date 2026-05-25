@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Transcripts are committed (they're the worked examples in TESTS.md).
+# Don't gitignore them.
