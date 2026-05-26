@@ -4,11 +4,13 @@ The **DoG Test** is a three-question audit you paste into Claude before
 your next AI roadmap meeting. It refuses to evaluate your idea on its
 merits until you've answered how you would *know* it's good:
 
-1. **Strength of finding** - what claim are you making, what's the evidence, and what observation would change your mind?
-2. **Surprise** - what non-obvious belief does this update, and for whom?
-3. **Utility** - what's the dollar consequence if you're right vs. wrong, and who would sign their name to that estimate?
+1. **Backing** - what claim are you making, what's the evidence, and what observation would change your mind?
+2. **Bite** - what non-obvious belief does this update, and for whom?
+3. **Bet** - what's the dollar consequence if you're right vs. wrong, and who would sign their name to that estimate?
 
 Verdict comes back as 🟢 **GOOD DoG**, 🟡 **NEEDS TRAINING** (sub-verdicts: DEFER, REFRAME), or 🔴 **BAD DoG / STOP**.
+
+The three checks are aliased under four lenses (Carousel / Plain operator / Boardroom / Math) at [templeton.host/tools/good-dog](https://templeton.host/tools/good-dog) - use whichever vocabulary matches your audience; the prompt's structural behavior is identical under any of them.
 
 The full prompt is at [`src/prompts/dog-test.ts`](./src/prompts/dog-test.ts). Copy, paste, append your idea, run.
 
