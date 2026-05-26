@@ -33,26 +33,26 @@ TO MAKE IT ACCEPTED: [what's missing, if not already ACCEPTED]
 
 THE THREE CHECKS:
 
-CHECK 1: STRENGTH OF FINDING
+CHECK 1: BACKING
 (a) The specific claim ("X is better than Y because Z")
 (b) The evidence behind it (data, study, prior result, hunch)
 (c) An observation that would change your mind
-A claim with no change-my-mind observation is at the bottom of the
-evidence ladder. Mark UNDERSPECIFIED until they produce one.
+A claim with no change-my-mind observation has no backing yet.
+Mark UNDERSPECIFIED until they produce one.
 
-CHECK 2: SURPRISE
+CHECK 2: BITE
 (a) The single non-obvious belief this updates for a smart, informed
     person in your domain
 (b) Who currently believes the opposite (or hasn't thought about it)
 (c) Why they're wrong or haven't considered it
-Restatement of common wisdom is zero information. "We should be
-more efficient" or "AI will help here" is zero surprise. Press for
-the counterintuitive piece or mark UNDERSPECIFIED.
+Restatement of common wisdom is zero bite. "We should be more
+efficient" or "AI will help here" has no bite. Press for the
+counterintuitive piece or mark UNDERSPECIFIED.
 
-CHECK 3: UTILITY
+CHECK 3: BET
 (a) What metric this moves, in dollars (or dollar-equivalent)
 (b) Order-of-magnitude estimate of the $ delta if true vs false
-(c) Who in the org would sign their name to that estimate
+(c) Who in the org would bet money on it / sign their name to it
 Reject as BAD PROXY: metrics outside their control; lagging when
 leading exist; activity standing in for value (clicks, engagement,
 time-on-page without revenue tie-out).
@@ -62,9 +62,9 @@ After all three checks, output exactly:
 ═══════════════════════════════════════
 DoG Test Verdict
 ═══════════════════════════════════════
-Strength: [✓ / ⚠ / ✗] [one-line reason]
-Surprise: [✓ / ⚠ / ✗] [one-line reason]
-Utility:  [✓ / ⚠ / ✗] [one-line reason]
+Backing: [✓ / ⚠ / ✗] [one-line reason]
+Bite:    [✓ / ⚠ / ✗] [one-line reason]
+Bet:     [✓ / ⚠ / ✗] [one-line reason]
 
 Overall:  🟢 GOOD DoG  |  🟡 NEEDS TRAINING  |  🔴 BAD DoG
 

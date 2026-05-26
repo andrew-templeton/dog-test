@@ -40,31 +40,45 @@ CASE_ID=manifest-qa-stop      npm run audit
 
 Transcripts land in `transcripts/<run-id>.{json,md}`.
 
+## Three checks under different lenses
+
+The prompt names the three checks **Backing × Bite × Bet** because
+the words are short, alliterative, and stick in a roadmap meeting.
+The underlying structure is the textbook Expected Value of Sample
+Information (Lindley 1956). Equivalent vocabulary slates for the
+same three checks:
+
+| Carousel / canonical | Plain operator | Boardroom | Math / EVSI |
+|---|---|---|---|
+| **Backing** | Evidence | Rigor | Strength of finding / Falsifiability |
+| **Bite** | Insight | Novelty | Surprise / Information gain |
+| **Bet** | Stakes | Impact | Utility / Expected dollar weight |
+
+Use whichever slate matches your audience. The prompt's structural
+behavior is identical under any of them.
+
 ## Prior art (so we're being honest)
 
 The DoG Test's three-question structure is not novel; it packages
-classical results from a few well-trodden bodies of work. Cite as
-appropriate:
+classical results from a few well-trodden bodies of work:
 
 - **Falsifiability and the evidence ladder** - Karl Popper,
-  *Logik der Forschung* (1934). The "strength of finding" check is
-  the Popperian load-bearing axis: a claim with no observation that
-  would change your mind is below the bottom rung.
-- **Surprise as information gain** - Claude Shannon,
-  *A Mathematical Theory of Communication* (1948). The "surprise"
-  check measures how far the claim updates a smart reader's prior;
-  Shannon gives the formal grounding (self-information,
-  $-\log p(x)$).
-- **Decision-theoretic utility** - Daniel Bernoulli (1738),
-  Leonard Savage (1954), Howard Raiffa (1968). The "utility" check
-  is expected-monetary-value with cost-asymmetry, the workhorse of
+  *Logik der Forschung* (1934). The Backing check is the Popperian
+  load-bearing axis: a claim with no observation that would change
+  your mind is below the bottom rung.
+- **Surprise as information gain** - Claude Shannon, *A Mathematical
+  Theory of Communication* (1948). The Bite check measures how far
+  the claim updates a smart reader's prior; Shannon gives the
+  formal grounding (self-information, $-\log p(x)$).
+- **Decision-theoretic utility** - Daniel Bernoulli (1738), Leonard
+  Savage (1954), Howard Raiffa (1968). The Bet check is
+  expected-monetary-value with cost-asymmetry, the workhorse of
   cost-sensitive learning.
-- **Expected value of information** - Dennis Lindley,
-  *On a Measure of the Information Provided by an Experiment* (1956);
-  Robert Schlaifer & Howard Raiffa, *Applied Statistical Decision
-  Theory* (1961). The product `Strength × Surprise × Utility` is the
-  structural form of EVSI / EVPI. We're not the first to multiply
-  these.
+- **Expected value of information** - Dennis Lindley, *On a Measure
+  of the Information Provided by an Experiment* (1956); Robert
+  Schlaifer & Howard Raiffa, *Applied Statistical Decision Theory*
+  (1961). The product `Backing × Bite × Bet` is the structural form
+  of EVSI / EVPI. We're not the first to multiply these.
 
 What the DoG Test contributes is **packaging**: a paste-into-Claude
 prompt that forces an operator to declare all three terms before they
