@@ -1,6 +1,14 @@
 // Verifies the orchestrator's verdict terminator detects the end of a
 // run reliably across plausible auditor phrasings, and does NOT fire
 // on intermediate turns that mention the same vocabulary.
+//
+// The fixture strings below intentionally use the rigorous-research
+// names for the three checks (Strength of finding / Surprise / Utility,
+// from Lindley 1956's EVSI factors). The user-facing prompt and the
+// launch carousel use the alliterative vanity slate (Backing / Bite /
+// Bet) for memorability; either slate satisfies the terminator since
+// it only checks for "DoG Test Verdict" + "Required next action".
+// See TESTS.md "Three checks under different lenses" for the mapping.
 
 import { describe, expect, it } from 'vitest';
 

@@ -32,4 +32,4 @@
 
 ## Read
 
-Inputs to the model business case are nearly identical to 2025. Labor cost is up 6%, error cost is down ~12%, volume is up 5%. None of the deltas are large enough to change the sign of the prior decision. The structural constraint (carrier sign-off clause) is what would need to move, and per Tony's status doc, it hasn't.
+Inputs to the model business case are nearly identical to 2025. Labor cost is up 6%, error cost is down ~12%, volume is up 5%. None of the deltas are large enough to change the sign of the prior decision. The structural constraint (carrier sign-off clause) is what would need to move, and per the Carrier Ops lead's status doc, it hasn't.

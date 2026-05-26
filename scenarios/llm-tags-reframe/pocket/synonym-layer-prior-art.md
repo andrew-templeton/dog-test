@@ -5,7 +5,7 @@
 
 ## What the platform already supports
 
-Algoria (our search vendor) ships query-side primitives we are not currently using:
+Algolia (our search vendor) ships query-side primitives we are not currently using:
 
 - **Synonym mapping:** configurable many-to-one and many-to-many term lists (e.g. `trainers => running shoes`, `mocs => moccasins`).
 - **Fuzzy spell-correction:** edit-distance-based query repair, tunable per language. Currently set to OFF in production.

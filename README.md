@@ -23,6 +23,8 @@ This repo has two parts:
 
 ## Quickstart
 
+> **Heads-up on credentials:** `.env` is gitignored. Never commit it. Never paste real API keys into committed files, screenshots, or transcripts; the repo runs your audit locally and never sends keys anywhere outside the model providers' SDKs.
+
 ```bash
 npm install
 cp .env.example .env

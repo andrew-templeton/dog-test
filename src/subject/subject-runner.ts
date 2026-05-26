@@ -60,16 +60,29 @@ const tools: Anthropic.Tool[] = [
   },
 ];
 
+// Manual recursive walk. We deliberately avoid the Node 20.12+
+// fs.readdir({ recursive: true, withFileTypes: true }) + Dirent.parentPath
+// combo because Dirent.parentPath landed late and silently produces wrong
+// relative paths on older runtimes. This loop works back to Node 18.
+const walkPocket = async (root: string, current: string, acc: string[]): Promise<void> => {
+  const entries = await fs.readdir(current, { withFileTypes: true });
+  for (const e of entries) {
+    const full = path.join(current, e.name);
+    // Refuse to follow symlinks - they could escape the pocket sandbox.
+    if (e.isSymbolicLink()) continue;
+    if (e.isDirectory()) {
+      await walkPocket(root, full, acc);
+    } else if (e.isFile()) {
+      acc.push(path.relative(root, full));
+    }
+  }
+};
+
 const listPocketFiles = async (pocketDir: string): Promise<string> => {
   try {
-    const entries = await fs.readdir(pocketDir, { withFileTypes: true, recursive: true });
-    const files = entries
-      .filter((e) => e.isFile())
-      .map((e) => {
-        const rel = path.relative(pocketDir, path.join(e.parentPath ?? pocketDir, e.name));
-        return rel;
-      })
-      .sort();
+    const files: string[] = [];
+    await walkPocket(pocketDir, pocketDir, files);
+    files.sort();
     if (files.length === 0) return '(pocket is empty)';
     return files.join('\n');
   } catch (err: unknown) {

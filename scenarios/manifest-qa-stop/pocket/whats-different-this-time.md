@@ -14,7 +14,7 @@ Notes to self before the Friday QA-model conversation.
 
 ## What's NOT changed
 
-- Carrier sign-off clause. Still in place for 5 of 7 carriers per Tony's status. This was the actual binding constraint on the 2025 pilot, not model accuracy.
+- Carrier sign-off clause. Still in place for 5 of 7 carriers per the Carrier Ops lead's status. This was the actual binding constraint on the 2025 pilot, not model accuracy.
 - Reviewer workflow obligations downstream of that clause.
 
 ## Honest read

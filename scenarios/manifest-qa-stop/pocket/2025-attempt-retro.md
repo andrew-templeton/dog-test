@@ -32,7 +32,7 @@ This clause was present in all 5 contracts at pilot start. We missed it because 
 
 ## Action items
 
-- **DO NOT retry the model pilot until carrier-contract sign-off requirements are renegotiated.** Tony Russo (Trade Ops) owns the renegotiation. Estimated landing: 2026-H2 at earliest, contingent on carrier appetite.
+- **DO NOT retry the model pilot until carrier-contract sign-off requirements are renegotiated.** the Carrier Ops lead (Trade Ops) owns the renegotiation. Estimated landing: 2026-H2 at earliest, contingent on carrier appetite.
 - Any future revisit of this proposal must start with a contract-surface review, not a model-capability review.
 - Preserve the labeled manifest dataset built during shadow (~140k examples). If we do retry, that dataset shortens time-to-pilot.
 

@@ -39,23 +39,25 @@ a kill switch in roadmap meetings, this is a real limitation worth
 naming; for an operator wanting a thinking partner, it is the
 feature.
 
-## What this validates
+## What we observed (worked examples, not a proof)
 
 1. **Renaming the checks from Strength/Surprise/Utility to
-   Backing/Bite/Bet did not change verdict behavior.** Same
-   structural three-check loop, same tier distribution shape.
+   Backing/Bite/Bet did not visibly change verdict behavior**
+   in these runs. Same structural three-check loop, same tier
+   distribution shape.
 
-2. **Fixed-operator + variable-pocket design holds across
-   replicates.** The subject prompt is unchanged across all five
-   scenarios; variance comes from the pocket + brief.
+2. **Fixed-operator + variable-pocket design behaved consistently
+   across replicates.** The subject prompt is unchanged across all
+   five scenarios; variance came from the pocket + brief.
 
-3. **Cross-family portability holds** (validated in earlier rounds
-   with OpenAI gpt-5.4 as the auditor + Claude Opus 4.7 as the
+3. **Cross-family portability worked in our runs.** Earlier rounds
+   used OpenAI gpt-5.4 as the auditor + Claude Opus 4.7 as the
    subject; see `2026-05-25-manifest-qa-green-1779747528689.md`
-   for the cross-family transcript, retained from the prior run).
+   for the cross-family transcript. n=1 per family; not a
+   portability proof.
 
-4. **The recursive step still produces sharper definitions** in
-   every recorded run.
+4. **The recursive step produced a sharper operator-authored
+   definition** in every recorded run.
 
 ## What this does NOT validate
 
